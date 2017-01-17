@@ -1,6 +1,7 @@
 package com.example.android101.vidstream;
 
 import android.util.Log;
+
 import com.google.firebase.iid.FirebaseInstanceId;
 import com.google.firebase.iid.FirebaseInstanceIdService;
 
@@ -12,6 +13,7 @@ import com.google.firebase.iid.FirebaseInstanceIdService;
 public class MyFirebaseInstanceIdService extends FirebaseInstanceIdService {
     //tokens expires every one hour therefore we need to have a way
     // to retrieve the new token every time there is an update to the token
+
     @Override
     public void onTokenRefresh() {
         //super.onTokenRefresh();
